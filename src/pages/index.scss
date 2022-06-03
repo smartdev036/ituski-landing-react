@@ -486,6 +486,14 @@
     transition-duration: 2s !important;
 }
 
+.accordion-button.collapsed:after {
+    background-image: url('../assets/img/minus.png');
+    transform: none;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../assets/img/plus.png');
+    transform: none;
+}
 .team-member-card {
     >div{
         >p{
@@ -595,10 +603,6 @@
 }
 
 .custom-accordion {
-    .accordion-button {
-        display: block;
-        padding: 2px;
-    }
     .accordion-item {
         margin-bottom: 30px;
         background-color: #1C164A;
@@ -609,33 +613,50 @@
     .accordion-button{
         background-color: #1C164A;
         color:white;
+        padding: 2px;
     }
 }
 .color1 {
     background-color: #1C164A;
 }
 
-.faq-icon{
-    max-height: 35px;
-    margin-right:10px;
-
+.accordion-button::after{
+    margin-right: 10px;
     @media (max-width: 2560px) {
-        max-height: 36px;
+        width: 36px;
+        height: 36px;
+        background-size: 36px 36px;
     }
 
     @media (max-width: 992px) {
-        max-height: 30px;
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
     }
 
     @media (max-width: 768px) {
-        max-height: 26px;
+        width: 26px;
+        height: 26px;
+        background-size: 26px 26px;
     }
 
     @media (max-width: 360px) {
-        max-height: 22px;
+        width: 22px;
+        height: 22px;
+        background-size: 22px 22px;
     }
 
     @media (max-width: 380px) {
-        max-height: 24px;
+        width: 24px;
+        height: 24px;
+        background-size: 24px 24px;
     }
 }
+
+.social-icons {
+    margin-top: -50px;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+

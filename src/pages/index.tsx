@@ -14,6 +14,8 @@ import prev_src from 'assets/img/prev.png';
 
 import photo1_src from 'assets/img/photo1.png';
 import plus_src from 'assets/img/plus.png';
+import discord_src from 'assets/img/discord.png';
+import twitter_src from 'assets/img/twitter.png';
 
 const traits_list = [
     {
@@ -219,11 +221,11 @@ const ItuskiHome = () => {
                             return (
                                 <Accordion.Item eventKey={index.toString()}>
                                     <Accordion.Header>
-                                            <p className='faq-title' style={{display: 'flex',justifyContent:'space-between', alignItems:'center'}}>
+                                            <p className='faq-title' >
                                                 <span>
                                                     { faq_item.title }
                                                 </span>
-                                                <img src={ plus_src }  className='faq-icon'/>
+                                                {/* <img src={ plus_src }  className='faq-icon'/> */}
                                             </p>   
                                     </Accordion.Header>
                                     <Accordion.Body>
@@ -242,6 +244,10 @@ const ItuskiHome = () => {
             {/* footer  */}
             <div style={{ padding: '50px', backgroundColor:'black'}}>
                 <span className='d-flex justify-content-center home-sub-title'>ITSUKI</span>
+                <div className='text-center'>
+                    <img src={discord_src} className='social-icons'/>
+                    <img src={twitter_src} className='social-icons'/>
+                </div>
                 <div className='text-center'>
                     @Copyright { new Date().getFullYear() } &middot; Itsuki &middot; All rights reserverd 
                 </div>
