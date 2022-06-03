@@ -553,6 +553,7 @@
 .faq-description {
     font-family: 'Amiko';
     font-size: 32px;
+    color: black;
 
     @media (max-width: 2560px) {
         font-size: 28px;
@@ -586,4 +587,10 @@
 .img_small{
     width: 100% !important;
     height: 200px !important;
+}
+
+.custom-accordion {
+    .accordion-button {
+        display: block;
+    }
 }

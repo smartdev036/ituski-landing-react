@@ -1,6 +1,6 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
-import { Carousel } from 'react-bootstrap';
+import { Row, Col, Carousel } from 'react-bootstrap';
+import { Accordion, Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 
@@ -49,7 +49,7 @@ const traits_list = [
 const faq_lists = [
     {
         title: 'What is Itsuki?',
-        description: ''
+        description: 'Itsuki is on NFT collection that resembles fores sprites.<br />When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
     },
     {
         title: 'How is Itsuki created and who is the artist?',
@@ -212,19 +212,31 @@ const ItuskiHome = () => {
 
                 {/** Collapse */}
 
-                <div className='home-container home-sub-title-margin-top' style={{ gap: '30px' }}>
+                <div className='home-container home-sub-title-margin-top custom-accordion' style={{ gap: '30px' }}>
+                    <Accordion defaultActiveKey='0'>
                     {
                         faq_lists.map((faq_item, index) => {
                             return (
-                                <div key={index} style={{ background: '#1C164A', marginTop: '35px' }}>
-                                    <p className='faq-title'>
-                                        { faq_item.title }
-                                        <img src={ plus_src }  style={{ float: 'right', background: '#1C164A', maxHeight: '35px', marginTop: '10px', marginRight: '10px' }}/>
-                                    </p>   
-                                </div>
+                                <Accordion.Item eventKey={index.toString()}>
+                                    <Accordion.Header>
+                                        <div key={index} style={{ background: '#1C164A', marginTop: '35px' }}>
+                                            <p className='faq-title'>
+                                                { faq_item.title }
+                                                <img src={ plus_src }  style={{ float: 'right', background: '#1C164A', maxHeight: '35px', marginTop: '10px', marginRight: '10px' }}/>
+                                            </p>   
+                                        </div>
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+                                        <p className='faq-description'>
+                                            "SSS"
+                                            { faq_item.description }
+                                        </p>   
+                                    </Accordion.Body>
+                                </Accordion.Item>
                             );
                         })
                     }
+                    </Accordion>
                 </div>
             </div>
         </>
