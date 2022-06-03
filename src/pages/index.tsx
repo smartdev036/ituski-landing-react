@@ -240,10 +240,10 @@ const ItuskiHome = () => {
             </div>
 
             {/* footer  */}
-            <div style={{ marginBottom: '50px' }}>
-                <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>ITSUKI</span>
+            <div style={{ padding: '50px', backgroundColor:'black'}}>
+                <span className='d-flex justify-content-center home-sub-title'>ITSUKI</span>
                 <div className='text-center'>
-                    @Copyright { new Date().getFullYear() } Itsuki All rights reserverd 
+                    @Copyright { new Date().getFullYear() } &middot; Itsuki &middot; All rights reserverd 
                 </div>
             </div>
 
