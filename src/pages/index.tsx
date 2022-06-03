@@ -215,7 +215,7 @@ const ItuskiHome = () => {
                 {/** Collapse */}
 
                 <div className='home-container home-sub-title-margin-top custom-accordion' style={{ gap: '30px' }}>
-                    <Accordion defaultActiveKey='0'>
+                    <Accordion>
                     {
                         faq_lists.map((faq_item, index) => {
                             return (
