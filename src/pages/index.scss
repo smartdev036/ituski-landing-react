@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Poppins:wght@400;700&display=swap');
+
+.home-container {
+    padding: 0px 140px;
+
+    @media (max-width: 1920px) {
+        padding: 0px 140px;
+    }
+
+    @media (max-width: 1600px) {
+        padding: 0px 150px;
+    }
+
+    @media (max-width: 992px) {
+        padding: 0px 60px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0px 60px;
+    }
+
+    @media (max-width: 576px) {
+        padding: 0px 40px;
+    }
+}
+
+
+.home-first-section {
+    background-image: url("../assets/img/section_1.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    // min-height: 100vh;
+}
+
+.home-title {
+    font-family: 'Murasamu Free Trial';
+    text-shadow: 0px 0px 14px #ffffff;
+    font-size: 150px;
+
+    @media (max-width: 1920px) {
+        font-size: 150px;
+    }
+
+    @media (max-width: 1600px) {
+        font-size: 120px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 100px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 90px;
+    }
+}
+
+.home-second-section {
+    background-image: url("../assets/img/section_2.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    min-height: 140vh;
+}
+
+.fade-border {
+    height: 40vh;
+    background: linear-gradient(180deg, #0e0b2600 0%, #0E0B26 100%);
+}
+
+.description-padding {
+
+    padding-left: 102px;
+
+    @media (max-width: 1920px) {
+        padding-left: 102px;
+    }
+
+    @media (max-width: 1600px) {
+        padding-left: 80px;
+    }
+
+    @media (max-width: 992px) {
+        padding-left: 60px;
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.home-description-title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 63px;
+
+    @media (max-width: 1920px) {
+        font-size: 42px;
+        line-height: 63px;
+    }
+
+    @media (max-width: 1600px) {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 28px;
+        line-height: 35px;
+    }
+}
+
+.home-description {
+    font-family: 'Poppins';
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 1.5px;
+
+    @media (max-width: 1920px) {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    @media (max-width: 1600px) {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+.home-sub-title {
+    font-family: 'Poppins';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 100px;
+
+    @media (max-width: 1920px) {
+        font-size: 72px;
+    }
+
+    @media (max-width: 1600px) {
+        font-size: 56px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 44px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
+}
+
+.home-sub-title-margin-top {
+    margin-top: 100px;
+
+    @media (max-width: 1920px) {
+        margin-top: 100px;
+    }
+
+    @media (max-width: 1600px) {
+        margin-top: 80px;
+    }
+
+    @media (max-width: 992px) {
+        margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 40px;
+    }
+
+    @media (max-width: 576px) {
+        margin-top: 0px;
+    }
+}
+
+.home-gap {
+    margin-top: 0px;
+
+    @media (max-width: 1920px) {
+        margin-top: 260px;
+    }
+
+    @media (max-width: 1600px) {
+        margin-top: 220px;
+    }
+
+    @media (max-width: 992px) {
+        margin-top: 180px;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 180px;
+    }
+
+    @media (max-width: 576px) {
+        margin-top: 20px;
+    }
+}
+
+.background-second-color {
+    background: #1C164A;
+}
+
+.home-third-section {
+    background-image: url("../assets/img/traits.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.Trait-Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px;
+    background: linear-gradient(180deg, #0D0A26 0%, rgba(0, 0, 0, 0.31) 100%);
+    box-shadow: -3px 2px 4px #0d0a2648;
+
+    span:first-child {
+        font-size: 36px;
+    }
+
+    span {
+        font-family: 'Poppins';
+        font-size: 42px;
+    }
+
+    @media (max-width: 1920px) {
+        padding: 40px 40px;
+    }
+
+    @media (max-width: 1600px) {
+        padding: 30px 40px;
+        span:first-child {
+            font-size: 20px;
+        }
+
+        span {
+            font-family: 'Poppins';
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        padding: 20px 40px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px 40px;
+    }
+
+    @media (max-width: 576px) {
+        padding: 20px 10px;
+
+        span:first-child {
+            font-size: 20px;
+        }
+
+        span {
+            font-family: 'Poppins';
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: 414px) {
+
+        span:first-child {
+            font-size: 18px;
+        }
+
+        span {
+            font-family: 'Poppins';
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 280px) {
+
+        span:first-child {
+            font-size: 18px;
+        }
+
+        span {
+            font-family: 'Poppins';
+            font-size: 10px;
+        }
+    }
+}
+
+.left-image-margin-top {
+    margin-top: -180px;
+
+    @media (max-width: 1920px) {
+        margin-top: -200px;
+    }
+
+    @media (max-width: 1600px) {
+        margin-top: -180px;
+    }
+
+    @media (max-width: 992px) {
+        margin-top: -140px;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: -140px;
+    }
+
+    @media (max-width: 576px) {
+        margin-top: -100px;
+    }
+}
+
+
+.slider-section {
+    background-image: url("../assets/img/itsuki-branches.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    height: 680px;
+
+    @media (max-width: 1920px) {
+        overflow:hidden;
+        height: 75vh;
+    }
+
+    @media (max-width: 1600px) {
+        overflow:hidden;
+        height: 85vh;
+    }
+
+    @media (max-width: 1440px) {
+        overflow:hidden;
+        height: 80vh;
+    }
+
+    @media (max-width: 992px) {
+        overflow:hidden;
+        height: 55vh;
+    }
+
+    @media (max-width: 768px) {
+        overflow:hidden;
+        height: 60vh;
+    }
+
+    @media (max-width: 375px) {
+        overflow:hidden;
+        height: 80vh;
+    }
+
+    @media (max-width: 280px) {
+        overflow:hidden;
+        height: 100vh;
+    }
+
+    .slider-section-title  {
+        font-family: 'Murasamu Free Trial';
+        font-size: 42px;
+
+        @media (max-width: 2560px) {
+            font-size: 36px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 26px;
+        }
+
+        @media (max-width: 360px) {
+            font-size: 22px;
+        }
+
+        @media (max-width: 380px) {
+            font-size: 18px;
+        }
+    }
+
+    .slider-section-description {
+        font-family: 'Amiko';
+        font-size: 32px;
+
+        @media (max-width: 2560px) {
+            font-size: 28px;
+        }
+        
+        @media (max-width: 1440px) {
+            font-size: 22px;
+        }
+
+        @media (max-width: 1240px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 912px) {
+            font-size: 28px;
+        }
+
+        @media (max-width: 820px) {
+            font-size: 24px;
+        }
+
+        @media (max-width: 540px) {
+            font-size: 16px;
+        }
+    }
+
+    .slider-description-box {
+        margin-top: 60px;
+        padding: 100px;
+
+        @media (max-width: 1920px) {
+            margin-top: 60px;
+            padding: 100px;
+        }
+
+        @media (max-width: 1600px) {
+            margin-top: 60px;
+            padding: 80px;
+        }
+
+        @media (max-width: 1440px) {
+            margin-top: 60px;
+            padding: 80px;
+        }
+
+        @media (max-width: 1240px) {
+            margin-top: 20px;
+            padding: 80px;
+        }
+
+        @media (max-width: 992px) {
+            margin-top: 50px;
+            padding: 40px;
+        }
+
+        @media (max-width: 912px) {
+            margin-top: 90px;
+            padding: 40px;
+        }
+
+        @media (max-width: 768px) {
+            margin-top: 70px;
+            padding: 40px;
+        }
+
+        @media (max-width: 576px) {
+            margin-top: 60px;
+            padding: 15px;
+        }
+    }
+}
+.carousel-item {
+    transition-duration: 2s !important;
+}
+
+.team-member-card {
+    >div{
+        >p{
+            font-size: 24px;
+            @media (max-width: 1920px) {
+                font-size: 22px;
+            }
+    
+            @media (max-width: 1600px) {
+                font-size: 20px;
+            }
+    
+            @media (max-width: 1440px) {
+                font-size: 20px;
+            }
+    
+            @media (max-width: 1240px) {
+                font-size: 16px;
+            }
+    
+            @media (max-width: 992px) {
+                font-size: 16px;
+            }
+    
+            @media (max-width: 912px) {
+                font-size: 16px;
+            }
+    
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+    
+            @media (max-width: 576px) {
+                font-size: 16px;
+            }
+        }
+    } 
+}
+
+.faq-title  {
+    font-size: 42px;
+    margin-left: 2rem;
+
+    @media (max-width: 2560px) {
+        font-size: 36px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 26px;
+    }
+
+    @media (max-width: 360px) {
+        font-size: 22px;
+    }
+
+    @media (max-width: 380px) {
+        font-size: 18px;
+    }
+}
+
+.faq-description {
+    font-family: 'Amiko';
+    font-size: 32px;
+
+    @media (max-width: 2560px) {
+        font-size: 28px;
+    }
+    
+    @media (max-width: 1440px) {
+        font-size: 22px;
+    }
+
+    @media (max-width: 1240px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 912px) {
+        font-size: 28px;
+    }
+
+    @media (max-width: 820px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 540px) {
+        font-size: 16px;
+    }
+}
+
+.img_small{
+    width: 100% !important;
+    height: 200px !important;
+}
