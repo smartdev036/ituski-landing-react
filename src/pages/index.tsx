@@ -49,19 +49,19 @@ const traits_list = [
 const faq_lists = [
     {
         title: 'What is Itsuki?',
-        description: 'Itsuki is on NFT collection that resembles fores sprites.<br />When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
+        description: 'Itsuki is on NFT collection that resembles fores sprites.<br>When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
     },
     {
         title: 'How is Itsuki created and who is the artist?',
-        description: ''
+        description: 'How is Itsuki created and who is the artist?<br>When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
     },
     {
         title: 'What is the supply & mint price?',
-        description: ''
+        description: 'What is the supply & mint price?  <br>When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
     },
     {
         title: 'When is the mint date?',
-        description: ''
+        description: 'About mint data.<br>When Itsuki are ready to be born, the forest brings them into the physical realm through a birthing ceremony, those oare the happinest times for the Itsuki and all the beings are on the forest.....'
     }
 ];
 
@@ -207,7 +207,7 @@ const ItuskiHome = () => {
                 </div>
             </div>
 
-            <div style={{ marginBottom: '500px' }}>
+            <div style={{ marginBottom: '50px' }}>
                 <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>FAQ</span>
 
                 {/** Collapse */}
@@ -219,17 +219,16 @@ const ItuskiHome = () => {
                             return (
                                 <Accordion.Item eventKey={index.toString()}>
                                     <Accordion.Header>
-                                        <div key={index} style={{ background: '#1C164A', marginTop: '35px' }}>
-                                            <p className='faq-title'>
-                                                { faq_item.title }
-                                                <img src={ plus_src }  style={{ float: 'right', background: '#1C164A', maxHeight: '35px', marginTop: '10px', marginRight: '10px' }}/>
+                                            <p className='faq-title' style={{display: 'flex',justifyContent:'space-between', alignItems:'center'}}>
+                                                <span>
+                                                    { faq_item.title }
+                                                </span>
+                                                <img src={ plus_src }  className='faq-icon'/>
                                             </p>   
-                                        </div>
                                     </Accordion.Header>
                                     <Accordion.Body>
                                         <p className='faq-description'>
-                                            "SSS"
-                                            { faq_item.description }
+                                            { faq_item.description.split('<br>').map(str => <p>{str}</p>) }
                                         </p>   
                                     </Accordion.Body>
                                 </Accordion.Item>
@@ -239,6 +238,16 @@ const ItuskiHome = () => {
                     </Accordion>
                 </div>
             </div>
+
+            {/* footer  */}
+            <div style={{ marginBottom: '50px' }}>
+                <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>ITSUKI</span>
+                <div className='text-center'>
+                    @Copyright { new Date().getFullYear() } Itsuki All rights reserverd 
+                </div>
+            </div>
+
+
         </>
     );
 };

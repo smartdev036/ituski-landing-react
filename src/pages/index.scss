@@ -527,7 +527,8 @@
 
 .faq-title  {
     font-size: 42px;
-    margin-left: 2rem;
+    margin-left: 20px;
+    margin-bottom: 0;
 
     @media (max-width: 2560px) {
         font-size: 36px;
@@ -553,7 +554,7 @@
 .faq-description {
     font-family: 'Amiko';
     font-size: 32px;
-    color: black;
+    margin-left: 20px;
 
     @media (max-width: 2560px) {
         font-size: 28px;
@@ -582,6 +583,10 @@
     @media (max-width: 540px) {
         font-size: 16px;
     }
+
+    p{
+        margin-bottom: 0;
+    }
 }
 
 .img_small{
@@ -592,5 +597,44 @@
 .custom-accordion {
     .accordion-button {
         display: block;
+        padding: 2px;
+    }
+    .accordion-item {
+        margin-bottom: 30px;
+        background-color: #1C164A;
+    }
+    .accordion-header{
+        background-color: #1C164A;
+    }
+    .accordion-button{
+        background-color: #1C164A;
+        color:white;
+    }
+}
+.color1 {
+    background-color: #1C164A;
+}
+
+.faq-icon{
+    max-height: 35px;
+
+    @media (max-width: 2560px) {
+        max-height: 36px;
+    }
+
+    @media (max-width: 992px) {
+        max-height: 30px;
+    }
+
+    @media (max-width: 768px) {
+        max-height: 26px;
+    }
+
+    @media (max-width: 360px) {
+        max-height: 22px;
+    }
+
+    @media (max-width: 380px) {
+        max-height: 24px;
     }
 }
