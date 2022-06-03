@@ -487,11 +487,11 @@
 }
 
 .accordion-button.collapsed:after {
-    background-image: url('../assets/img/minus.png');
+    background-image: url('../assets/img/plus.png');
     transform: none;
 }
 .accordion-button:not(.collapsed)::after {
-    background-image: url('../assets/img/plus.png');
+    background-image: url('../assets/img/minus.png');
     transform: none;
 }
 .team-member-card {
