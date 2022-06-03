@@ -16,6 +16,7 @@ import photo1_src from 'assets/img/photo1.png';
 import plus_src from 'assets/img/plus.png';
 import discord_src from 'assets/img/discord.png';
 import twitter_src from 'assets/img/twitter.png';
+import LazyLoadingImage from 'components/Loading/LazyLoadingImage';
 
 const traits_list = [
     {
@@ -93,7 +94,7 @@ const ItuskiHome = () => {
                     </Col>
                     <Col sm='6'>
                         <div>
-                            <img src={rezzsha_src} alt='rezzsha' width={'100%'} />
+                            <LazyLoadingImage src={rezzsha_src} alt='rezzsha' />
                         </div>
                     </Col>
                 </Row>
@@ -219,7 +220,7 @@ const ItuskiHome = () => {
                     {
                         faq_lists.map((faq_item, index) => {
                             return (
-                                <Accordion.Item eventKey={index.toString()}>
+                                <Accordion.Item eventKey={index.toString()} key={index}>
                                     <Accordion.Header>
                                             <p className='faq-title' >
                                                 <span>
@@ -229,9 +230,9 @@ const ItuskiHome = () => {
                                             </p>   
                                     </Accordion.Header>
                                     <Accordion.Body>
-                                        <p className='faq-description'>
-                                            { faq_item.description.split('<br>').map(str => <p>{str}</p>) }
-                                        </p>   
+                                        <div className='faq-description'>
+                                            { faq_item.description.split('<br>').map((str,index) => <p key={index}>{str}</p>) }
+                                        </div>   
                                     </Accordion.Body>
                                 </Accordion.Item>
                             );
